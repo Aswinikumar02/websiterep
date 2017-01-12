@@ -1,0 +1,52 @@
+#background{
+	width:100%;
+	position: relative;
+}
+#item
+{
+	background-color: LAVENDERBLUSH;
+	font-family: 'Pacifico', cursive;
+	font-size: 12px;
+}
+#text
+{
+	position:absolute;
+	width:100%;
+	bottom: -140px;
+	left: 600px;
+	font-family:'Indie Flower', cursive;
+	font-size: 40px;
+}
+
+#text1,#text2{
+		text-align: center;
+		color: LIGHTCORAL;
+}
+#text1{
+	font-size: 50px;
+}
+#text2{
+	font-size: 25px;
+}
+.content a{
+	font-family: 'Indie Flower', cursive;
+}
+#seg{
+	text-align: center;
+	padding-top: -150px;
+	padding-bottom: -70px;
+}
+#welcome{
+	width:100%;
+	height:640px;
+}
+#bgc{
+	background-color: #ecc093;
+}
+#footer
+{
+	margin-top: 5px;
+}
+#footer a:hover{
+	color: white;
+}

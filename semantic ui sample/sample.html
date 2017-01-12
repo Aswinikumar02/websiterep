@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>
+		semui
+	</title>
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../semantic/dist/semantic.min.js"></script>
+	
+</head>
+<body>
+	<div class="ui container">
+		<div class="ui shape">
+			<div class="ui sides">
+				<div class="active side">
+					<div class="ui raised segment">First content</div>
+				</div>
+				<div class="side">
+					<div class="ui raised segment">Second content</div>
+				</div>
+				<div class="side">
+					<div class="ui raised segment">Third content</div>
+				</div>
+				<div class="side">
+					<div class="ui raised segment">Foruth content</div>
+				</div>
+				<div class="side">
+					<div class="ui raised segment">Fifth content</div>
+				</div>
+			</div>
+		</div>
+			<div class="ui button" id="flip">Flip</div>
+	</div>
+		<script>
+			$('#flip').click(function(){
+				$('.ui.shape').shape('flip over');
+			});
+		</script>
+</body>
+</html>
