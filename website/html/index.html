@@ -11,52 +11,58 @@
 	
 </head>
 <body>
-	
+		<div id="bgimage">
 		<div class="ui top secondary fixed block menu">
 					<div class="ui large image">
 						<img src="../image/nwlogo.png">
 					</div>
-				<div id="item" class="item menu">
+						<div id="item" class="right item menu">
                 
-					<a class="active item" href="/home">
+					<a class="active stackable item" href="/home">
 						<i class="home icon"></i>HOME
 					</a>
-					<a class="item" href="/about">
+					<a class="stackable item" href="/about">
 						<i class="info icon"></i>ABOUT
 					</a>
-					<a class="item" href="/shop">
+					<a class="stackable item" href="/shop">
 						<i class="shop icon"></i>SHOP
-					</a>a
-					<a class="item" href="/factory"
-						<i class="factory icon"></i>ICE FACTORY
 					</a>
 
-					<a class="item" href="/contact">
+					<a class="stackable item" href="/contact">
 						<i class="call icon"></i>CONTACT
 					</a>
-					<a class="item" href="/signin/signup">
-						<i class="sign in icon"></i>SIGN IN/SIGN UP
+					<a class="stackable item" href="/signin/signup">
+						<i class="sign in icon"></i>SIGN IN
 					</a>
-					<div class="ui disabled icon input">
-  						<i class="search icon" href="/search"></i>
-  							<input type="text" placeholder="Search...">
-  						
-					</div>
 				</div>
+			</div>
+			<div class="ui top fixed stackable labeled  icon menu" id="mobile">
+         <div class="item" id="sidebarmenu">
+           <i class="sidebar icon"></i>Menu
+         <div id="sidemenu" class="ui sidebar vertical left menu mobsidebar" style="margin-top:10px;">
+           <a href="#" class="item">Home</a>
+           <a href="#" class="item">Apps</a>
+           <a href="#" class="item">Services</a>
+           <a href="#" class="item">About us</a>
+           <a href="#" class="item">Contact us</a>
 
-		</div>
-		<div class="ui image">
-			<img id="background" src="../image/icecreamback.jpg">
-		</div>
+         </div>
+       </div>
+   </div>
+
 		
-		<div class="ui container">	
-			<h1 class="ui header">
-				<span id="text">
-						Change the World, One Scoop at a time.<br>
-						<p>Sign in for exciting offer  !!!</p>
-						<button class="ui positive button">Sign Up</button>
-				</span>
-			</h1>
+		
+			
+			<div id="text">
+				
+						<p>Change the World, One Scoop at a time.<br>
+						Sign in for exciting offer  !!!</p>
+						<a href="Login.html">
+						<button class="ui positive button">
+							Sign Up</button></a>
+				
+			</div>
+		</div>
 			<h1 class="ui header" id="text1">
 				Lift your spirit, Order an ice cream
 			</h1>
@@ -184,5 +190,13 @@
    </div>
    </div>
 </div>  
+<script>
+	$('.special.cards .image').dimmer({
+ on: 'hover'
+});
+$('#sidebarmenu').click(function(){
+  $('.mobsidebar').sidebar('toggle');
+});
+</script>
 </body>
 </html>

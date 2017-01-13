@@ -1,6 +1,10 @@
-#background{
-	width:100%;
-	position: relative;
+#bgimage{
+	min-height: 800px;
+	background-image: url(../image/icecreamback.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 }
 #item
 {
@@ -8,14 +12,12 @@
 	font-family: 'Pacifico', cursive;
 	font-size: 12px;
 }
-#text
-{
-	position:absolute;
-	width:100%;
-	bottom: -140px;
-	left: 600px;
-	font-family:'Indie Flower', cursive;
+#text{
+	padding: 25% 0 30% 45%;
+	text-align: center;
 	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+	color: #8B008B;
 }
 
 #text1,#text2{
@@ -49,4 +51,32 @@
 }
 #footer a:hover{
 	color: white;
+}
+#imgbody
+{
+	background-image: url("../image/signup4.jpg");
+	background-repeat: no-repeat;
+}
+#aligncont h1{
+	text-align: center;
+	padding-right: 70px;
+	margin-top: 70px;
+}
+#mobile{
+  display: none;
+}
+#web{
+  display: flex;
+}
+
+@media only screen and (max-width:760px){
+#mobile{
+  display: flex;
+}
+#web{
+  display: none;
+}
+#image{
+  display: none;
+}
 }
