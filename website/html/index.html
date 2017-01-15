@@ -1,5 +1,8 @@
 <html>
 <head>
+	<meta Charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Izozkia is a Icecream parlour which contain different types of icecream">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="d:/workspace/semantic/dist/semantic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -13,8 +16,7 @@
 <body>
 <!--header-->
 		<div id="bgimage">
-			<div class="container">
-		<div class="ui top secondary fixed block menu">
+		<div class="ui top secondary fixed block menu" id="web">
 					<div class="ui large image">
 						<img src="../image/nwlogo.png">
 					</div>
@@ -51,7 +53,7 @@
          </div>
        </div>
    </div>
-
+   			<!--Jumbotron-->
 			<div id="text">
 				
 						<p>Change the World, One Scoop at a time.<br>
@@ -61,8 +63,9 @@
 							Sign Up</button></a>
 				
 			</div>
+			<!--close jumbotron-->
 		</div>
-	</div>
+	
 	
 
 			<h1 class="ui header" id="text1">
@@ -74,13 +77,21 @@
 				+91 9566131151</h3>
 <!--end of header-->
 <!--second row-->
-				<div class="ui stackable four column grid">
+				<div class="ui stackable four column grid" id="secrow">
+					<div class="ui stackable special cards">
 					<!--first card column-->
 					<div class="column">
-						<div class="ui fluid stackable card">
-							<div class="image">
-								<img src="../image/cone.jpg">
-							</div>
+						<div class="ui stackable card">
+							<div class="blurring dimmable image">
+      							<div class="ui inverted dimmer">
+        							<div class="content">
+        								<div class="center">	
+        									<div class="ui inverted black button">Explore</div>
+            							</div>
+            						</div>
+        						</div>
+      								<img src="../image/cone.jpg">
+    						</div>
 							<div class="content">
 								<a class="ui centered aligned header">SCOOP</a>
 							</div>
@@ -89,9 +100,16 @@
 					<!--end of first card column-->
 					<!--second card column-->
 					<div class="column">
-						<div class="ui fluid stackable card">
-							<div class="image">
-								<img src="../image/cake.jpg">
+						<div class="ui stackable card">
+							<div class="blurring dimmable image">
+      							<div class="ui inverted dimmer">
+        							<div class="content">
+        								<div class="center">	
+        									<div class="ui inverted black button">Explore</div>
+            							</div>
+            						</div>
+            					</div>
+										<img src="../image/cake.jpg">
 							</div>
 							<div class="content">
 								<a class="ui centered aligned header">CAKE</a>
@@ -101,9 +119,16 @@
 					<!--end of second card column-->
 					<!--third card column-->
 					<div class="column">
-						<div class="ui fluid stackable card">
-							<div class="image" >
-								<img src="../image/softy3.jpg">
+						<div class="ui stackable card">
+							<div class="blurring dimmable image">
+      							<div class="ui inverted dimmer">
+        							<div class="content">
+        								<div class="center">	
+        									<div class="ui inverted black button">Explore</div>
+            							</div>
+            						</div>
+        						</div>
+									<img src="../image/softy3.jpg">
 							</div>
 							<div class="content">
 								<a class="ui centered aligned header">SOFTY</a>
@@ -113,8 +138,15 @@
 					<!--end of third card column-->
 					<!--fourth card column-->
 					<div class="column">
-						<div class="ui fluid stackable card">
-							<div class="image">
+						<div class="ui stackable card">
+							<div class="blurring dimmable image">
+      							<div class="ui inverted dimmer">
+        							<div class="content">
+        								<div class="center">	
+        									<div class="ui inverted black button">Explore</div>
+            							</div>
+            						</div>
+        						</div>
 								<img src="../image/bowl2.jpg">
 							</div>
 							<div class="content">
@@ -124,9 +156,10 @@
 					</div>
 					<!--end of fourth card column-->
 				</div>
+			</div>
 				<!--end of first row-->
 				<!--second row-->
-			<div class="ui stackable grid">
+			<div class="ui stackable grid" id="rows">
 					<!--image part-->
 					<div class="ten wide column">
 						<div claass="ui segment">
@@ -216,7 +249,7 @@
 <!--footer-->
 <script>
 	$('.special.cards .image').dimmer({
- on: 'hover'
+  on: 'hover'
 });
 $('#sidebarmenu').click(function(){
   $('.mobsidebar').sidebar('toggle');

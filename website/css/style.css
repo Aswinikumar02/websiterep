@@ -19,6 +19,12 @@
 	font-family: 'Pacifico', cursive;
 	color: #8B008B;
 }
+#secrow{
+	padding-top: 15px;
+}
+#rows{
+	padding-top: 20px;
+}
 
 #text1,#text2{
 		text-align: center;
